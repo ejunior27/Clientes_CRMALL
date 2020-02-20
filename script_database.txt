@@ -1,0 +1,16 @@
+CREATE DATABASE `clientescrm` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `clientes` (
+  `Id` int NOT NULL,
+  `Nome` varchar(100) NOT NULL,
+  `DataNascimento` datetime NOT NULL,
+  `Sexo` varchar(45) DEFAULT NULL,
+  `Cep` varchar(45) DEFAULT NULL,
+  `Endereco` varchar(45) DEFAULT NULL,
+  `Numero` int DEFAULT NULL,
+  `Complemento` varchar(100) DEFAULT NULL,
+  `Bairro` varchar(45) DEFAULT NULL,
+  `Estado` varchar(45) DEFAULT NULL,
+  `Cidade` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
